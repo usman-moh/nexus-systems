@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Repositories | Core Infrastructure Systems</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .gallery-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1.25rem;
+        }
+        .gallery-card audio, .gallery-card video {
+            width: 100%;
+            margin-top: 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nexus Technical Systems</h1>
+        <p>Enterprise Web Infrastructure & Software Optimization Metrics</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Systems Overview</a>
+        <a href="about.html">Operational Matrix</a>
+        <a href="media.html" class="active">Asset Repositories</a>
+        <a href="contact.html">Secure Gateway</a>
+    </nav>
+
+    <main>
+        <h2>3.0 Multi-Format Asset Pipeline Rendering</h2>
+        <p>Demonstrating browser-native rendering of streaming binary assets. Content streams are safely executed directly by the user agent without third-party frameworks.</p>
+
+        <div class="grid-wrapper">
+            <div class="gallery-card">
+                <h4 style="margin-bottom: 0.5rem;">Visual Matrix Layer</h4>
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="High-density analytics interface">
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Native image asset injection via static web source.</p>
+            </div>
+
+            <div class="gallery-card">
+                <h4 style="margin-bottom: 0.5rem;">Acoustic Signal Array</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">MPEG layer-3 audio frequency verification channel.</p>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the native audio pipeline.
+                </audio>
+            </div>
+
+            <div class="gallery-card">
+                <h4 style="margin-bottom: 0.5rem;">Video Framework Node</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">H.264 high profile media compilation stream container.</p>
+                <video controls>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the native video pipeline.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Technical Systems. Academic Framework Distribution Build.</p>
+    </footer>
+
+</body>
+</html>

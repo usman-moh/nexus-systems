@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Gateway | Core Infrastructure Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container {
+            max-width: 650px;
+            margin: 2rem auto 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--brand-primary);
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.85rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            background-color: #fafafa;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--brand-accent);
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .submit-btn {
+            background-color: var(--brand-accent);
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.15s ease;
+        }
+        .submit-btn:hover {
+            background-color: var(--brand-accent-hover);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nexus Technical Systems</h1>
+        <p>Enterprise Web Infrastructure & Software Optimization Metrics</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Systems Overview</a>
+        <a href="about.html">Operational Matrix</a>
+        <a href="media.html">Asset Repositories</a>
+        <a href="contact.html" class="active">Secure Gateway</a>
+    </nav>
+
+    <main>
+        <h2>4.0 Automated Email Communications Channel</h2>
+        <p>Input text elements compiled within this matrix map straight to an asymmetric mail transaction API. This handles remote inbox transmission protocols without a local database backend.</p>
+
+        <form action="https://formspree.io/f/sample_id" method="POST" class="form-container">
+            <div class="form-group">
+                <label for="student_group">Project Identification Unit:</label>
+                <input type="text" id="student_group" name="student_group" placeholder="e.g., Section 3 - Group 1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sender_email">Target Verified Email Address:</label>
+                <input type="email" id="sender_email" name="sender_email" placeholder="instructor@university.edu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payload">Diagnostic Narrative Input Buffer:</label>
+                <textarea id="payload" name="payload" rows="6" placeholder="Type evaluation parameters here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Execute Transmission Protocol</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Technical Systems. Academic Framework Distribution Build.</p>
+    </footer>
+
+</body>
+</html>

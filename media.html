@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
+        /* Component layout styling optimized for multi-format pipelines */
         .grid-wrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -59,9 +60,21 @@
 
         <div class="grid-wrapper">
             <div class="gallery-card">
-                <h4 style="margin-bottom: 0.5rem;">Visual Matrix Layer</h4>
+                <h4 style="margin-bottom: 0.5rem;">Visual Matrix Layer 01</h4>
                 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="High-density analytics interface">
                 <p style="font-size: 0.85rem; color: var(--text-secondary);">Native image asset injection via static web source.</p>
+            </div>
+
+            <div class="gallery-card">
+                <h4 style="margin-bottom: 0.5rem;">Visual Matrix Layer 02</h4>
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="Cybersecurity matrix stream">
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Secondary visualization node stream replication.</p>
+            </div>
+
+            <div class="gallery-card">
+                <h4 style="margin-bottom: 0.5rem;">Visual Matrix Layer 03</h4>
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Server rack mainframe infrastructure">
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Hardware node layout topology mapping asset.</p>
             </div>
 
             <div class="gallery-card">
@@ -76,8 +89,8 @@
             <div class="gallery-card">
                 <h4 style="margin-bottom: 0.5rem;">Video Framework Node</h4>
                 <p style="font-size: 0.85rem; color: var(--text-secondary);">H.264 high profile media compilation stream container.</p>
-                <video controls>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                <video controls preload="metadata">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
                     Your browser does not support the native video pipeline.
                 </video>
             </div>

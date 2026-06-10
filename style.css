@@ -1,5 +1,8 @@
-/* Modern Design Tokens */
+/* ==========================================================================
+   Modern Design Tokens & System Sync
+   ========================================================================== */
 :root {
+    /* Global Themes */
     --bg-dark: #0f172a;
     --bg-body: #f8fafc;
     --surface: #ffffff;
@@ -8,8 +11,18 @@
     --text-main: #334155;
     --text-title: #0f172a;
     --border: #e2e8f0;
+
+    /* CRITICAL FIX: Maps HTML internal stylesheets to global tokens */
+    --brand-primary: #0f172a;
+    --brand-accent: #2563eb;
+    --brand-accent-hover: #1d4ed8;
+    --border-subtle: #e2e8f0;
+    --text-secondary: #64748b;
 }
 
+/* ==========================================================================
+   Global Reset & Normalization
+   ========================================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +39,9 @@ body {
     min-height: 100vh;
 }
 
-/* Premium Header Component */
+/* ==========================================================================
+   Layout Components (Header, Nav, Footer)
+   ========================================================================== */
 header {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     color: white;
@@ -46,7 +61,6 @@ header p {
     font-size: 1.1rem;
 }
 
-/* Sticky Navigation Control Bar */
 nav {
     background-color: #1e293b;
     display: flex;
@@ -79,7 +93,19 @@ nav a.active {
     background-color: var(--primary);
 }
 
-/* Main Content Workspace */
+footer {
+    background-color: #0f172a;
+    color: #64748b;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+    margin-top: auto;
+}
+
+/* ==========================================================================
+   Main Workspace Container
+   ========================================================================== */
 main {
     flex: 1;
     max-width: 1000px;
@@ -97,13 +123,32 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+h3 {
+    font-size: 1.4rem;
+    color: var(--text-title);
+    margin: 2rem 0 1rem 0;
+}
+
 p {
     font-size: 1.05rem;
     line-height: 1.75;
     margin-bottom: 1.25rem;
 }
 
-/* Polished Data Tables */
+/* Accent element block for Homepage */
+.accent-block {
+    background-color: #f1f5f9;
+    border-left: 4px solid var(--primary);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Data Presentation Tables (About Page)
+   ========================================================================== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -127,7 +172,9 @@ tr:hover td {
     background-color: #f8fafc;
 }
 
-/* Responsive Grid & Cards */
+/* ==========================================================================
+   Responsive Multi-Format Media Grid (Media Page)
+   ========================================================================== */
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -142,6 +189,10 @@ tr:hover td {
     padding: 1.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .gallery-card:hover {
@@ -154,14 +205,17 @@ tr:hover td {
     height: 180px;
     object-fit: cover;
     border-radius: 6px;
+    margin-bottom: 0.5rem;
 }
 
 .gallery-card audio, .gallery-card video {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
-/* Interactive Forms UI */
+/* ==========================================================================
+   Interactive Forms UI (Contact Page)
+   ========================================================================== */
 .form-container {
     max-width: 550px;
     margin: 2rem auto 0 auto;
@@ -178,16 +232,17 @@ tr:hover td {
     color: var(--text-title);
 }
 
-.form-group input, .form-container textarea {
+.form-group input, .form-container textarea, .form-group textarea {
     width: 100%;
     padding: 0.75rem 1rem;
     border: 1px solid var(--border);
     border-radius: 6px;
     font-size: 1rem;
+    background-color: #ffffff;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.form-group input:focus, .form-container textarea:focus {
+.form-group input:focus, .form-container textarea:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
@@ -208,14 +263,4 @@ tr:hover td {
 
 .submit-btn:hover {
     background-color: var(--primary-hover);
-}
-
-/* Footer Element */
-footer {
-    background-color: #0f172a;
-    color: #64748b;
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    border-top: 1px solid #1e293b;
 }
